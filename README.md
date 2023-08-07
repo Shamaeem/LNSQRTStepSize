@@ -12,17 +12,7 @@ python draw_comps.py --logs-folder ./logs/CIFAR10 --fig-type others
 ```
 python ./src/main.py --optim-method SGD --eta0 0.007 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
 
-python ./src/main.py --optim-method SGD_Stage_Decay --eta0 0.04 --alpha 0.1 --milestones 12000 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
-
-python ./src/main.py --optim-method SGD_Stage_Decay --eta0 0.04 --alpha 0.1 --milestones 9000 15000 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
-
-python ./src/main.py --optim-method SGD_ReduceLROnPlateau --eta0 0.04 --alpha 0.5 --patience 3 --threshold 0.001 --nesterov --momentum 0.9 --weight-decay 0.001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
-
 python ./src/main.py --optim-method SGD_1sqrt_Decay --eta0 0.05 --alpha 0.00653 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 50 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
-
-python ./src/main.py --optim-method SGD_1t_Decay --eta0 0.05 --alpha 0.000384 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
-
-python ./src/main.py --optim-method SGD_Exp_Decay --eta0 0.05 --alpha 0.999902 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
 
 python ./src/main.py --optim-method Adam --eta0 0.0009 --weight-decay 0.0001 --train-epochs 100 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/FashionMNIST --dataset FashionMNIST --dataroot ./data
 
@@ -39,17 +29,7 @@ python ./src/main.py --optim-method SGD_1sqrtlnt_Decay --eta0 0.05 --\alpha  0.0
 ```
 python ./src/main.py --optim-method SGD --eta0 0.07 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
 
-python ./src/main.py --optim-method SGD_Stage_Decay --eta0 0.1 --alpha 0.1 --milestones 32000 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
-
-python ./src/main.py --optim-method SGD_Stage_Decay --eta0 0.2 --alpha 0.1 --milestones 32000 40000 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
-
-python ./src/main.py --optim-method SGD_ReduceLROnPlateau --eta0 0.07 --alpha 0.1 --patience 10 --threshold 0.001 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
-
 python ./src/main.py --optim-method SGD_1sqrt_Decay --eta0 0.2 --alpha 0.079079 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
-
-python ./src/main.py --optim-method SGD_1t_Decay --eta0 0.1 --alpha 0.000230 --nesterov --momentum 0.9 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
-
-python ./src/main.py --optim-method SGD_Exp_Decay --eta0 0.1 --alpha 0.99991 --nesterov --momentum 0.9 --weight-decay 0.0005 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
 
 python ./src/main.py --optim-method Adam --eta0 0.0009 --weight-decay 0.0001 --train-epochs 164 --batchsize 128 --eval-interval 1 --use-cuda --log-folder ./logs/CIFAR10 --dataset CIFAR10 --dataroot ./data
 
