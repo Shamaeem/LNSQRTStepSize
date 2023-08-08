@@ -65,7 +65,7 @@ class SGDLRDecay(Optimizer):
         elif scheme == '1sqrt':
             self.get_lr_func = lambda cur_lr, t, eta0, alpha, milestones, T_max, gamma, coeff: eta0 / (1.0 + alpha*(t**0.5))
         elif scheme == '1sqrtlnt':
-            self.get_lr_func = lambda cur_lr, t, eta0, alpha, milestones, T_max, gamma, coeff: eta0 / (1+alpha*((t**0.5)+math.log(t)))
+            self.get_lr_func = lambda cur_lr, t, eta0, alpha, milestones, T_max, gamma, coeff: eta0 / (1+alpha*((t**0.5)+math.log(t+1)))
         elif scheme == 'stage':
             self.get_lr_func = lambda cur_lr, t, eta0, alpha, milestones, T_max, gamma, coeff: cur_lr * alpha if t in milestones else cur_lr
         elif scheme == 'cosine':
